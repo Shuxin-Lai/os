@@ -6,19 +6,3 @@
 @include b(button) {
   @include set-component-css-var('button', $button);
 }
-
-.el-button {
-  $a: selectorToString(&);
-  background: $a;
-}
-
-$text-color: blue;
-
-.error {
-  $text-color: red !global; 
-  color: $text-color;
-}
-
-.normal-text {
-  color: $text-color;
-}

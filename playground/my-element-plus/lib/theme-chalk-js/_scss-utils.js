@@ -41,6 +41,7 @@ export function str_index($value, $substring) {
 export const map = {
   get,
   deep_merge: merge,
+  merge: Object.assign, // shallow merge
 };
 
 export function rgba($value, $opacity) {
