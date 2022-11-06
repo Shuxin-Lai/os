@@ -5,14 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:scss": "sass lib/theme-chalk/index.scss ./dist/theme-chalk/index.css",
+    "watch:scss": "sass -w lib/theme-chalk/index.scss ./dist/theme-chalk/index.css",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "lodash-es": "^4.17.21",
     "sass": "^1.56.0",
     "vue": "^3.2.41"
   },
   "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
     "@vitejs/plugin-vue": "^3.2.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.0",

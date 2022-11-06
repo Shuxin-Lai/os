@@ -1,0 +1,37 @@
+@use 'config';
+
+@function selectorToString($selector) {
+  $selector: inspect($selector);
+  $selector: str-slice($selector, 2, -2);
+  @return $selector;
+}
+
+// join var name
+// joinVarName(('button', 'text-color')) => '--el-button-text-color'
+@function joinVarName($list) {
+  $name: '--' + config.$namespace;
+  @each $item in $list {
+    @if $item != '' {
+      $name: $name + '-' + $item;
+    }
+  }
+  @return $name;
+}
+
+//? ==
+// function getCssVar(...$args) {
+//   return `var(${joinVarName($args)})`
+// }
+// getCssVar('button', 'text-color') => var(--el-button-text-color)
+@function getCssVar($args...) {
+  @return var(#{joinVarName($args)});
+}
+
+// getCssVarName('button', 'text-color') => '--el-button-text-color'
+//? ==
+// function getCssVarName(...$args) {
+//   return joinVarName($args)
+// }
+@function getCssVarName($args...) {
+  @return joinVarName($args);
+}

@@ -10,16 +10,20 @@ importers:
 
   playground/my-element-plus:
     specifiers:
+      '@types/lodash-es': ^4.17.6
       '@vitejs/plugin-vue': ^3.2.0
+      lodash-es: ^4.17.21
       sass: ^1.56.0
       typescript: ^4.6.4
       vite: ^3.2.0
       vue: ^3.2.41
       vue-tsc: ^1.0.9
     dependencies:
+      lodash-es: registry.npmmirror.com/lodash-es/4.17.21
       sass: registry.npmmirror.com/sass/1.56.0
       vue: registry.npmmirror.com/vue/3.2.41
     devDependencies:
+      '@types/lodash-es': registry.npmmirror.com/@types/lodash-es/4.17.6
       '@vitejs/plugin-vue': registry.npmmirror.com/@vitejs/plugin-vue/3.2.0_vite@3.2.2+vue@3.2.41
       typescript: registry.npmmirror.com/typescript/4.8.4
       vite: registry.npmmirror.com/vite/3.2.2_sass@1.56.0
@@ -79,6 +83,20 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  registry.npmmirror.com/@types/lodash-es/4.17.6:
+    resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash-es/-/lodash-es-4.17.6.tgz}
+    name: '@types/lodash-es'
+    version: 4.17.6
+    dependencies:
+      '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.188
+    dev: true
+
+  registry.npmmirror.com/@types/lodash/4.14.188:
+    resolution: {integrity: sha512-zmEmF5OIM3rb7SbLCFYoQhO4dGt2FRM9AMkxvA3LaADOF1n8in/zGJlWji9fmafLoNyz+FoL6FE0SLtGIArD7w==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.188.tgz}
+    name: '@types/lodash'
+    version: 4.14.188
+    dev: true
 
   registry.npmmirror.com/@vitejs/plugin-vue/3.2.0_vite@3.2.2+vue@3.2.41:
     resolution: {integrity: sha512-E0tnaL4fr+qkdCNxJ+Xd0yM31UwMkQje76fsDVBBUCoGOUPexu2VDUYHL8P4CwV+zMvWw6nlRw19OnRKmYAJpw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@vitejs/plugin-vue/-/plugin-vue-3.2.0.tgz}
@@ -646,6 +664,12 @@ packages:
     name: is-number
     version: 7.0.0
     engines: {node: '>=0.12.0'}
+
+  registry.npmmirror.com/lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
+    name: lodash-es
+    version: 4.17.21
+    dev: false
 
   registry.npmmirror.com/magic-string/0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/magic-string/-/magic-string-0.25.9.tgz}
