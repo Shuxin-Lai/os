@@ -23,9 +23,16 @@
         "lib/components/*",
       ]
     },
-    "noEmit": true
+    "noEmit": true,
+    "types": [
+      "unplugin-vue-macros/macros-global" /* ... */
+    ]
   },
   "include": [
+    "lib/**/*.ts",
+    "lib/**/*.d.ts",
+    "lib/**/*.tsx",
+    "lib/**/*.vue",
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
