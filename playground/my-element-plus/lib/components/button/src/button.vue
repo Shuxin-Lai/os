@@ -1,9 +1,11 @@
 <template>
-  <el-button >button</el-button>
+  <button>
+    <slot />
+  </button>
 </template>
 
 <script setup lang="ts">
-import ElButton from '@/button/src/button.vue';
+defineProps();
 </script>
 
 <style scoped></style>
