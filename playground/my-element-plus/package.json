@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue/shared": "^3.2.41",
     "lodash-es": "^4.17.21",
     "sass": "^1.56.0"
   },

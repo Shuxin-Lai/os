@@ -21,6 +21,9 @@
       ],
       "@/*": [
         "lib/components/*",
+      ],
+      "~/*": [
+        "lib/*"
       ]
     },
     "noEmit": true,
