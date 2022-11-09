@@ -1,0 +1,1 @@
+const globalConfig = ref<ConfigProviderContext>();
