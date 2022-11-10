@@ -6,7 +6,9 @@
   "module": "index.ts",
   "dependencies": {
     "@element-plus/constants": "workspace:*",
-    "@element-plus/hooks": "workspace:*"
+    "@element-plus/hooks": "workspace:*",
+    "@element-plus/types": "workspace:*",
+    "@element-plus/utils": "workspace:*"
   },
   "peerDependencies": {
     "vue": "^3.2.0"

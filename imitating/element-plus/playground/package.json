@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@element-plus/components": "workspace:*",
+    "@element-plus/icons-vue": "^2.0.10",
     "@element-plus/theme-chalk": "workspace:*",
     "vue": "^3.2.41"
   },
