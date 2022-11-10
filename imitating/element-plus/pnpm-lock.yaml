@@ -15,9 +15,17 @@ importers:
       vue: registry.npmmirror.com/vue/3.2.44
 
   packages/components:
-    specifiers: {}
+    specifiers:
+      '@element-plus/constants': workspace:*
+      '@element-plus/hooks': workspace:*
+    dependencies:
+      '@element-plus/constants': link:../constants
+      '@element-plus/hooks': link:../hooks
 
   packages/constants:
+    specifiers: {}
+
+  packages/hooks:
     specifiers: {}
 
   packages/theme-chalk:

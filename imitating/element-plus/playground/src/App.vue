@@ -1,13 +1,12 @@
 <template>
   <div>
-    <ElButton>
-      123
-    </ElButton>
+    <h2>Button</h2>
+    <a-button />
   </div>
 </template>
 
 <script setup lang="ts">
-import ElButton from '@element-plus/components/button/src/button.vue'
+import AButton from './components/button.vue'
 </script>
 
 <style scoped></style>
